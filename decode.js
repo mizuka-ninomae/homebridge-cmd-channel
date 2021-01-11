@@ -1,5 +1,9 @@
+// Nature Remo Local APIが出力するdataを視認しやすい形にするプログラムです。
+// NECフォーマットの機器のみ対応しています。
+// リモコンをNature Remoに照射後『node decode.js』で動くはずです。
+// 動かす前に６行目のIPアドレスを自分のNature Remoのものに変えてください。
 const exec = require('child_process').exec;
-const cmd  = "curl GET 'http://192.168.1.101/messages' -H 'X-Requested-With: local'"
+const cmd  = "curl GET 'http://192.168.xxx.xxx/messages' -H 'X-Requested-With: local'"
 
 let json = exec(cmd,  function(error, stdout, stderr) {
   let jsonData = JSON.parse(stdout);
