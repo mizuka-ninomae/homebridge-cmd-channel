@@ -14,10 +14,6 @@ function ChannelAccessory(log, config) {
   this.ip                    = config["ip"];
   this.powe_signal           = config["powe_signal"]
   this.inputs                = config["inputs"];
-  this.state = {
-    power: true,
-    source: 0
-  };
 
   this.infoService       = new Service.AccessoryInformation();
   this.televisionService = new Service.Television(this.name);
