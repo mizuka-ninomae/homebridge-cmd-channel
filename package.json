@@ -1,17 +1,29 @@
+
 {
   "name": "homebridge-cmd-channel",
   "version": "0.0.1",
+  "description": "homubridge用 汎用チャンネル切り替えプラグイン",
+  "main": "index.js",
+  "scripts": {
+    "lint": "echo \"Warning: lint is not used\" && exit 0",
+    "build": "echo \"Warning: build is not used\" && exit 0"
+  },
+  "engines": {
+    "node": ">=10.17.0",
+    "homebridge": ">=1.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/mizuka-ninomae/homebridge-cmd-channel.git"
   },
-  "main": "index.js",
   "keywords": [
     "homebridge-plugin",
+    "homebridge-cmd-channel",
+    "cmd",
     "TV",
     "Display",
-    "Infrared remote control",
-    "I-O DATA",
+    "InfraredRemoteControl",
+    "I-ODATA",
     "LCD-M4K432XDB",
     "LCD-M4K493XDB",
     "LCD-M4K552XDB",
@@ -20,18 +32,10 @@
     "LCD-M4K652XDB",
     "NatureRemo"
   ],
-  "engines": {
-    "node": ">=10.17.0",
-    "homebridge": ">=1.0.0"
-  },
-  "scripts": {
-    "lint": "echo \"Warning: lint is not used\" && exit 0",
-    "build": "echo \"Warning: build is not used\" && exit 0"
-  },
-  "description": "homubridge用 汎用チャンネル切り替えプラグイン",
+  "author": "mizuka-ninomae",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mizuka-ninomae/homebridge-cmd-channel/issues"
   },
   "homepage": "https://github.com/mizuka-ninomae/homebridge-cmd-channel#readme",
-  "author": "mizuka-ninomae",
-  "license": "MIT"
+}
