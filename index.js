@@ -1,5 +1,5 @@
 let Service, Characteristic;
-const exec = require('child_process').exec;
+const exec       = require('child_process').exec;
 
 
 module.exports = function(homebridge){
@@ -9,11 +9,11 @@ module.exports = function(homebridge){
 }
 
 function ChannelAccessory(log, config) {
-  this.log                   = log;
-  this.name                  = config["name"];
-  this.ip                    = config["ip"];
-  this.powe_signal           = config["powe_signal"]
-  this.inputs                = config["inputs"];
+  this.log               = log;
+  this.name              = config["name"];
+  this.ip                = config["ip"];
+  this.powe_signal       = config["powe_signal"]
+  this.inputs            = config["inputs"];
 
   this.infoService       = new Service.AccessoryInformation();
   this.televisionService = new Service.Television(this.name);
