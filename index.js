@@ -94,11 +94,13 @@ ChannelAccessory.prototype.setPowerState = function(value, callback) {
   this.cmdRequest(this.powe_signal, callback);
 }
 
+//------------------------------------------------------------------------------
 ChannelAccessory.prototype.setCannel = function(channel, callback) {
   this.log('Channel: ' + this.inputs[channel].name);
   this.cmdRequest(this.inputs[channel].signal, callback);
 }
 
+//------------------------------------------------------------------------------
 ChannelAccessory.prototype.cmdRequest = function(input, callback) {
   let cmd;
   if (this.ip == null) {
