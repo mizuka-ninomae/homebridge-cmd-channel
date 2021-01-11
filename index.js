@@ -101,7 +101,7 @@ ChannelAccessory.prototype.cmdRequest = function(input, callback) {
     cmd = input;
   }
   else {
-//------* * * I-O DATA DISPLAY リモコン用エンコードロジック ここから * * * ------
+// * * * I-O DATA DISPLAYのリモコンのシグナルをNatureRemo用にencode ここから * * *
     const t1  = 562;
     const t3  = t1 * 3;
     const t4  = t1 * 4;
@@ -151,7 +151,7 @@ ChannelAccessory.prototype.cmdRequest = function(input, callback) {
     const cmd_1 = "curl -X POST 'http://" + this.ip + "/messages' -H 'X-Requested-With: curl' -d '{\"format\":\"us\",\"freq\":38,\"data\":[";
     const cmd_2 = "]}'";
     cmd = cmd_1 + array_2.join(',') + cmd_2;
-//------* * * I-O DATA DISPLAY リモコン用エンコードロジック ここまで * * * ------
+// * * * I-O DATA DISPLAYのリモコンのシグナルをNatureRemo用にencode ここまで * * *
   }
   this.log(cmd);
   exec(cmd, function(error, stdout, stderr) {
