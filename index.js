@@ -16,9 +16,7 @@ function ChannelAccessory(log, config) {
   this.inputs                = config["inputs"];
   this.state = {
     power: true,
-    ambilight: true,
     source: 0,
-    volume: 0,
   };
 
   this.infoService       = new Service.AccessoryInformation();
